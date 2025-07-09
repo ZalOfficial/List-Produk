@@ -1,0 +1,216 @@
+<!DOCTYPE html><html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Produk ZalOfficial</title>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Rubik', sans-serif;
+      background: linear-gradient(to bottom right, #000428, #004e92);
+      color: #fff;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 30px 20px;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 32px;
+      color: #00d9ff;
+    }
+    .produk {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: #02192f;
+      border-radius: 12px;
+      box-shadow: 0 0 15px #00d9ff55;
+      padding: 20px;
+      transition: 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 25px #00d9ffaa;
+    }
+    .card h3 {
+      color: #00d9ff;
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+    .card p {
+      margin-bottom: 10px;
+      font-size: 14px;
+      color: #ddd;
+      white-space: pre-line;
+    }
+    .order {
+      display: inline-block;
+      margin-top: 10px;
+      background: #00bfff;
+      color: #000;
+      padding: 10px 16px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 0 10px #00bfff88;
+    }
+    .footer {
+      text-align: center;
+      color: #ccc;
+      font-size: 14px;
+      padding: 20px 10px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>List Produk ZalOfficial</h1>
+    <div class="produk"><div class="card">
+    <h3>Open Web Bug</h3>
+    <p>Harga :
+10K : 3Hari
+25K : Seminggu
+40K : 3Minggu
+60K : No Update
+110K : Free Update Permanen
+
+Keuntungan :
+• Bebas Bug Sepuasnya
+• Efek Bug Forclose Invisible & Delay Invisible
+• Cara Make Simple Ga Kek Sc' Harus Ini Harus Itu</p> <a href="https://wa.me/6289524134626?text=Bang+Mau+Order+Apk%2FWeb+Bug" class="order">Order? Klik Ini</a> </div>
+
+<div class="card">
+    <h3>Open Panel Pterodactyl</h3>
+    <p>List Harga Panel :
+6GB : 2K 
+7GB : 3K 
+8GB : 4K 
+9GB : 5K 
+10GB : 6K 
+Unlimited: 5K
+
+Keuntungan:
+• Panel Anti Delay 
+• Anti Rusuh
+• Anti Curi Sc
+• FastResp 
+• Garansi 30 Hari</p> <a href="https://wa.me/6289524134626?text=Bang+Mau+Order+Panel+Pterodactyl" class="order">Order? Klik Ini</a> </div>
+<div class="card">
+    <h3>Open Reseller Panel</h3>
+    <p>Harga Reseller :
+10K : Setiap Vps Mokad Pt'
+15K : No Pt'
+
+Keuntungan:
+• Bisa Buat Panel Sepuasnya
+• Bisa Jualan Panel
+• Bisa Open Sewa Bot Bug, Md, Push Kontak
+• Garansi 30 Hari</p> <a href="https://wa.me/6289524134626?text=Bang+Mau+Join+Reseller+Panel+Pterodactyl" class="order">Order Klik Ini</a> </div>
+
+<div class="card">
+    <h3>Open VPS (Virtual Private Server)</h3>
+    <p>List Harga Vps :
+1GB Core1 : 20K 
+2GB Core1 : 25K 
+2GB Core2 : 30K 
+4GB Core2 : 40K 
+8GB Core4 : 55K 
+16GB Core4 : 75K
+
+Keuntungan Buy VPS:
+• Free Req Nama Domain Free
+• Pasang Egg Bot WA 
+• Free Install Wings 
+• Garansi 15 Hari (1x Claim)</p> <a href="https://wa.me/6289524134626?text=Bang+Mau+Order+VPS" class="order">Order? Klik Ini</a> </div>
+
+<div class="card">
+    <h3>Jasa Pembuatan Script Bug</h3>
+    <p>Harga : 50K - 80K
+
+Efek & Keuntungan:
+• Function Dari Gw 
+• Efek Forclose & Delay 
+• Request Nama, Foto, Style Bisa Custom Sesuka Hati</p> <a href="https://wa.me/6289524134626?text=Bang+Mau+Jasa+Buat+Script+Bug" class="order">Order? Klik Ini</a> </div>
+
+<div class="card">
+    <h3>Jasa Rename Script</h3>
+    <p>Harga Rename : 15K
+
+Keuntungan:
+• Req Foto Script 
+• Tampilan Jadi Punya Elu
+• Nama Sesuai Keinginan Elu
+• Auto Jadi Developer Developer</p> <a href="https://wa.me/6289524134626?text=Bang+Mau+Rename+Script" class="order">Order? Klik Ini</a> </div>
+
+<div class="card">
+    <h3>Sell Function Bug</h3>
+    <p>Harga Setiap Function:
+Forclose 1-5 Msg : 50K 
+Matiin Data Tetep Forclose : 60K
+Delay Hard Invisible : 30K
+
+Keuntungan :
+• Free Pemasangan Function
+• Free Add Case
+• Function Bisa Dijual</p> <a href="https://wa.me/6289524134626?text=Bang+Mau+Order+Function+Bug" class="order">Order? Klik Ini</a> </div>
+
+<div class="card">
+    <h3>Open Reseller Script The End</h3>
+    <p>Harga Reseller : 50K
+
+Keuntungan:
+• Bisa Jual Script VIP 
+• Bisa Open PO Sendiri 
+• Masuk GB Reseller 
+• Diutamakan Saat Update</p> <a href="https://wa.me/6289524134626?text=Bang+Mau+Join+Reseller+The+End" class="order">Order? Klik Ini</a> </div>
+
+<div class="card">
+    <h3>Open Partner Script The End</h3>
+    <P>Harga Partner : 80K
+
+Keuntungan :
+• Admin All GB 
+• Masuk Credit Script 
+• Bisa Open Reseller The End
+• Bisa Open PO Sendiri
+• Bisa Jual Semua VIP Script</p> <a href="https://wa.me/6289524134626?text=Bang+Mau+Join+Partner+The+End" class="order">Order? Klik Ini</a> </div>
+
+<div class="card">
+    <h3>Open Murid Bug WhatsApp/Telegram</h3>
+    <p>Harga Murbug :
+1 Minggu : 5K 
+1 Bulan : 15K
+Permanen : 25K
+
+Keuntungan:
+• Bisa Open Jasbug 
+• Bug Sepuasnya Asal Tau Jeda
+• Cara Pake Simple & Gampang
+• Bisa Bugin Orang Terdekat</p> <a href="https://wa.me/6289524134626?text=Bang+Mau+Belajar+Bug+WA" class="order">Order? Klik Ini</a> </div>
+
+<div class="card">
+    <h3>Open Jasa Bug</h3>
+    <p>Harga Jasbug : 3K
+
+Keuntungan :
+• Auto C1
+• Target Mokad
+• Privasi Terjaga</p> <a href="https://wa.me/6289524134626?text=Bang+Mau+Jasa+Bug" class="order">Order? Klik Ini</a> </div>
+
+</div>
+<div class="footer">
+  Hubungi ZalOfficial via <a href="https://wa.me/6289524134626" style="color:#00d9ff; text-decoration:none; font-weight:bold;">WhatsApp</a>
+  atau <a href="https://t.me/ZalOffc" style="color:#00d9ff; text-decoration:none; font-weight:bold;">Telegram</a>
+</div>
+
+  </div>
+</body>
+</html>
