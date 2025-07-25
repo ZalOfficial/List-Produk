@@ -1,4 +1,5 @@
-<!DOCTYPE html><html lang="id">
+<!DOCTYPE html>
+<html lang="id">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,89 +8,143 @@
   <style>
     body {
       font-family: 'Rubik', sans-serif;
-      background: linear-gradient(to bottom right, #000428, #004e92);
+      background: linear-gradient(135deg, #000814 0%, #001d3d 100%);
       color: #fff;
       margin: 0;
       padding: 0;
+      overflow-x: hidden;
     }
     .container {
-      max-width: 1100px;
+      max-width: 1200px;
       margin: 0 auto;
-      padding: 30px 20px;
+      padding: 40px 20px;
     }
     h1 {
       text-align: center;
-      margin-bottom: 40px;
-      font-size: 32px;
-      color: #00d9ff;
+      font-size: 42px;
+      margin-bottom: 60px;
+      color: #00f3ff;
+      text-shadow: 0 0 10px #00f3ff, 0 0 30px #00cfff, 0 0 50px #00cfff;
+      animation: glow 2s infinite alternate;
+    }
+    @keyframes glow {
+      from { text-shadow: 0 0 10px #00f3ff, 0 0 30px #00cfff; }
+      to { text-shadow: 0 0 20px #00eaff, 0 0 60px #00eaff; }
     }
     .produk {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
     }
     .card {
-      background: #02192f;
-      border-radius: 12px;
-      box-shadow: 0 0 15px #00d9ff55;
+      background: rgba(0, 15, 35, 0.9);
+      border: 1px solid rgba(0, 243, 255, 0.3);
+      border-radius: 16px;
       padding: 20px;
-      transition: 0.3s;
+      transition: 0.4s ease;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 0 10px rgba(0, 243, 255, 0.3);
+    }
+    .card::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: conic-gradient(from 180deg, #00f3ff, #0066ff, #00f3ff);
+      animation: rotate 7s linear infinite;
+      opacity: 0.12;
+      z-index: 0;
+    }
+    @keyframes rotate {
+      100% { transform: rotate(360deg); }
     }
     .card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 0 25px #00d9ffaa;
+      transform: translateY(-8px) scale(1.02);
+      box-shadow: 0 0 25px rgba(0, 243, 255, 0.6), 0 0 60px rgba(0, 243, 255, 0.3);
     }
     .card h3 {
-      color: #00d9ff;
-      font-size: 20px;
-      margin-bottom: 10px;
+      font-size: 22px;
+      margin-bottom: 12px;
+      color: #00f3ff;
+      position: relative;
+      z-index: 1;
     }
     .card p {
-      margin-bottom: 10px;
-      font-size: 14px;
-      color: #ddd;
+      font-size: 15px;
+      color: #ccc;
+      line-height: 1.5;
       white-space: pre-line;
+      position: relative;
+      z-index: 1;
     }
     .order {
       display: inline-block;
-      margin-top: 10px;
-      background: #00bfff;
-      color: #000;
-      padding: 10px 16px;
+      margin-top: 12px;
+      padding: 10px 18px;
       border-radius: 8px;
-      text-decoration: none;
+      background: linear-gradient(45deg, #00f3ff, #0099ff);
+      color: #000;
       font-weight: bold;
-      box-shadow: 0 0 10px #00bfff88;
+      text-decoration: none;
+      box-shadow: 0 0 15px rgba(0, 243, 255, 0.7);
+      transition: 0.3s;
+      position: relative;
+      z-index: 1;
+    }
+    .order:hover {
+      transform: scale(1.08);
+      box-shadow: 0 0 25px rgba(0, 243, 255, 0.9);
+      background: linear-gradient(45deg, #00ffff, #00bbff);
     }
     .footer {
       text-align: center;
-      color: #ccc;
+      color: #999;
       font-size: 14px;
-      padding: 20px 10px;
-      margin-top: 40px;
+      padding: 30px 10px;
+      margin-top: 60px;
+    }
+    .footer a {
+      color: #00f3ff;
+      font-weight: bold;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+    .footer a:hover {
+      color: #0099ff;
     }
   </style>
 </head>
 <body>
   <div class="container">
     <h1>List Produk ZalOfficial</h1>
-    <div class="produk"><div class="card">
-    <h3>Open Web Bug</h3>
-    <p>Harga :
-10K : 3Hari
-25K : Seminggu
+    <div class="produk">
+      <div class="card">
+        <h3>Open Apk Bug The End Invictus</h3>
+        <p>Harga :
+5K : Akses 2Hari
+20K : Akses 1Minggu
 40K : 3Minggu
-60K : No Update
-110K : Free Update Permanen
+50K : 1Bulan
+90K : Free Update Permanen
 
 Keuntungan :
 • Bebas Bug Sepuasnya
-• Efek Bug Forclose Invisible & Delay Invisible
-• Cara Make Simple Ga Kek Sc' Harus Ini Harus Itu</p> <a href="https://wa.me/6289524134626?text=Bang+Mau+Order+Apk%2FWeb+Bug" class="order">Order? Klik Ini</a> </div>
-
-<div class="card">
+• Free Request Username & Password
+• Bug Tanpa Jeda
+• Bisa Spam Bug 
+• Efek Bug Forclose & Delay Invisible
+• Bisa Bug Group
+• Cara Make Gampang
+• Login -> Masukin No Target -> Pilih Tipe Bug -> Done
+• Tampilan Apk Kece</p>
+        <a href="https://wa.me/6289524134626?text=Bang+Mau+Order+Apk%2FWeb+Bug" class="order">Buy Produk</a>
+        </div>
+     <div class="card">
     <h3>Open Panel Pterodactyl</h3>
-    <p>List Harga Panel :
+    <p>Harga :
 6GB : 2K 
 7GB : 3K 
 8GB : 4K 
@@ -102,10 +157,10 @@ Keuntungan:
 • Anti Rusuh
 • Anti Curi Sc
 • FastResp 
-• Garansi 30 Hari</p> <a href="https://wa.me/6289524134626?text=Bang+Mau+Order+Panel+Pterodactyl" class="order">Order? Klik Ini</a> </div>
+• Garansi 30 Hari</p> <a href="https://wa.me/6289524134626?text=Bang+Mau+Order+Panel+Pterodactyl" class="order">Buy Produk</a> </div>
 <div class="card">
     <h3>Open Reseller Panel</h3>
-    <p>Harga Reseller :
+    <p>Harga :
 10K : Setiap Vps Mokad Pt'
 15K : No Pt'
 
@@ -113,11 +168,10 @@ Keuntungan:
 • Bisa Buat Panel Sepuasnya
 • Bisa Jualan Panel
 • Bisa Open Sewa Bot Bug, Md, Push Kontak
-• Garansi 30 Hari</p> <a href="https://wa.me/6289524134626?text=Bang+Mau+Join+Reseller+Panel+Pterodactyl" class="order">Order Klik Ini</a> </div>
-
+• Garansi 30 Hari</p> <a href="https://wa.me/6289524134626?text=Bang+Mau+Join+Reseller+Panel+Pterodactyl" class="order">Buy Produk</a> </div>
 <div class="card">
     <h3>Open VPS (Virtual Private Server)</h3>
-    <p>List Harga Vps :
+    <p>Harga  :
 1GB Core1 : 20K 
 2GB Core1 : 25K 
 2GB Core2 : 30K 
@@ -129,63 +183,47 @@ Keuntungan Buy VPS:
 • Free Req Nama Domain Free
 • Pasang Egg Bot WA 
 • Free Install Wings 
-• Garansi 15 Hari (1x Claim)</p> <a href="https://wa.me/6289524134626?text=Bang+Mau+Order+VPS" class="order">Order? Klik Ini</a> </div>
-
+• Garansi 15 Hari (1x Claim)
+</p> <a href="https://wa.me/6289524134626?text=Bang+Mau+Order+VPS" class="order">Buy Produk</a> </div>
 <div class="card">
     <h3>Jasa Pembuatan Script Bug</h3>
-    <p>Harga : 50K - 80K
+    <p>Harga : 50K
 
-Efek & Keuntungan:
+Efek & Keuntungan :
 • Function Dari Gw 
 • Efek Forclose & Delay 
-• Request Nama, Foto, Style Bisa Custom Sesuka Hati</p> <a href="https://wa.me/6289524134626?text=Bang+Mau+Jasa+Buat+Script+Bug" class="order">Order? Klik Ini</a> </div>
-
+• Request Nama, Foto, Style Bisa Custom Sesuka Hati</p> <a href="https://wa.me/6289524134626?text=Bang+Mau+Jasa+Buat+Script+Bug" class="order">Buy Produk</a> </div>
 <div class="card">
     <h3>Jasa Rename Script</h3>
-    <p>Harga Rename : 15K
+    <p>Harga : 15K
 
 Keuntungan:
 • Req Foto Script 
-• Tampilan Jadi Punya Elu
-• Nama Sesuai Keinginan Elu
-• Auto Jadi Developer Developer</p> <a href="https://wa.me/6289524134626?text=Bang+Mau+Rename+Script" class="order">Order? Klik Ini</a> </div>
-
-<div class="card">
-    <h3>Sell Function Bug</h3>
-    <p>Harga Setiap Function:
-Forclose 1-5 Msg : 50K 
-Matiin Data Tetep Forclose : 60K
-Delay Hard Invisible : 30K
-
-Keuntungan :
-• Free Pemasangan Function
-• Free Add Case
-• Function Bisa Dijual</p> <a href="https://wa.me/6289524134626?text=Bang+Mau+Order+Function+Bug" class="order">Order? Klik Ini</a> </div>
-
+• Tampilan Jadi Punya Kamu
+• Nama Sesuai Keinginan Kamu
+• Auto Jadi Developer Script</p> <a href="https://wa.me/6289524134626?text=Bang+Mau+Rename+Script" class="order">Buy Produk</a> </div>
 <div class="card">
     <h3>Open Reseller Script The End</h3>
-    <p>Harga Reseller : 50K
+    <p>Harga : 45K
 
 Keuntungan:
 • Bisa Jual Script VIP 
 • Bisa Open PO Sendiri 
 • Masuk GB Reseller 
-• Diutamakan Saat Update</p> <a href="https://wa.me/6289524134626?text=Bang+Mau+Join+Reseller+The+End" class="order">Order? Klik Ini</a> </div>
-
+• Diutamakan Saat Update</p> <a href="https://wa.me/6289524134626?text=Bang+Mau+Join+Reseller+The+End" class="order">Buy Produk</a> </div>
 <div class="card">
     <h3>Open Partner Script The End</h3>
-    <P>Harga Partner : 80K
+    <P>Harga : 80K
 
 Keuntungan :
 • Admin All GB 
 • Masuk Credit Script 
 • Bisa Open Reseller The End
 • Bisa Open PO Sendiri
-• Bisa Jual Semua VIP Script</p> <a href="https://wa.me/6289524134626?text=Bang+Mau+Join+Partner+The+End" class="order">Order? Klik Ini</a> </div>
-
+• Bisa Jual Semua VIP Script</p> <a href="https://wa.me/6289524134626?text=Bang+Mau+Join+Partner+The+End" class="order">Order</a> </div>
 <div class="card">
     <h3>Open Murid Bug WhatsApp/Telegram</h3>
-    <p>Harga Murbug :
+    <p>Harga
 1 Minggu : 5K 
 1 Bulan : 15K
 Permanen : 25K
@@ -194,23 +232,33 @@ Keuntungan:
 • Bisa Open Jasbug 
 • Bug Sepuasnya Asal Tau Jeda
 • Cara Pake Simple & Gampang
-• Bisa Bugin Orang Terdekat</p> <a href="https://wa.me/6289524134626?text=Bang+Mau+Belajar+Bug+WA" class="order">Order? Klik Ini</a> </div>
-
+• Bisa Bugin Orang Terdekat</p> <a href="https://wa.me/6289524134626?text=Bang+Mau+Belajar+Bug+WA" class="order">Buy Produk</a> </div>
 <div class="card">
     <h3>Open Jasa Bug</h3>
-    <p>Harga Jasbug : 3K
+    <p>Harga : 3K
 
 Keuntungan :
 • Auto C1
 • Target Mokad
-• Privasi Terjaga</p> <a href="https://wa.me/6289524134626?text=Bang+Mau+Jasa+Bug" class="order">Order? Klik Ini</a> </div>
+• Privasi Terjaga</p> <a href="https://wa.me/6289524134626?text=Bang+Mau+Jasa+Bug" class="order">Buy Produk</a> </div>
+<div class="card">
+    <h3>Open Murid Banned</h3>
+    <p>Harga : 10K
 
-</div>
-<div class="footer">
-  Hubungi ZalOfficial via <a href="https://wa.me/6289524134626" style="color:#00d9ff; text-decoration:none; font-weight:bold;">WhatsApp</a>
-  atau <a href="https://t.me/ZalOffc" style="color:#00d9ff; text-decoration:none; font-weight:bold;">Telegram</a>
-</div>
-
+Keuntungan :
+• Bisa Kenonin No Orang
+• Dapet Mt Banned (Metode) Work
+• Bisa Jadi Kang Banned</p> <a href="https://wa.me/6289524134626?text=Bang+Mau+Jasa+Bug" class="order">Buy Produk</a> </div>
+    </div>
+    <div class="footer">
+      Hubungi ZalOfficial via 
+      <a href="https://wa.me/6289524134626">WhatsApp</a> atau 
+      <a href="https://t.me/ZalOffc">Telegram</a>
+      <br><br>
+      <span style="color: #ccc;">
+        Jika Ingin Bertanya-tanya Atau Mau Nego Bisa Pencet Teks Telegram Atau WhatsApp Di Atas
+      </span>
+    </div>
   </div>
 </body>
 </html>
