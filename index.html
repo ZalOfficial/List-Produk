@@ -3,251 +3,121 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Produk ZalOfficial</title>
-  <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet"/>
+  <title>Kalkulator</title>
   <style>
+    * {
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
     body {
-      font-family: 'Rubik', sans-serif;
-      background: #0b0b0b;
-      color: #eee;
       margin: 0;
       padding: 0;
+      background: linear-gradient(145deg, #050505, #101010);
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #e0e0e0;
     }
     .container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 40px 20px;
+      background: rgba(255, 255, 255, 0.02);
+      border-radius: 20px;
+      backdrop-filter: blur(15px);
+      box-shadow: 0 0 30px rgba(255,255,255,0.05), 0 0 40px rgba(192,192,192,0.12);
+      padding: 30px;
+      width: 360px;
+      text-align: center;
+      border: 1px solid rgba(192,192,192,0.2);
     }
     h1 {
-      text-align: center;
-      font-size: 42px;
-      margin-bottom: 60px;
+      font-size: 1.8rem;
+      margin-bottom: 20px;
       color: #ffffff;
-      text-shadow: 0 0 10px #fff, 0 0 30px silver, 0 0 50px #ccc;
-      animation: glow 2s infinite alternate;
+      text-shadow: 0 0 10px #fff, 0 0 25px silver;
     }
-    @keyframes glow {
-      from { text-shadow: 0 0 10px #eee, 0 0 30px silver; }
-      to { text-shadow: 0 0 20px #fff, 0 0 60px #aaa; }
-    }
-    .produk {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 30px;
-    }
-    .card {
-      background: #121212;
+    input {
+      width: 100%;
+      padding: 14px;
+      margin: 12px 0;
+      font-size: 1rem;
       border: 1px solid #888;
-      border-radius: 16px;
-      padding: 20px;
-      transition: 0.4s ease;
-      position: relative;
-      overflow: hidden;
-      box-shadow: 0 0 10px rgba(255, 255, 255, 0.08);
-    }
-    .card:hover {
-      transform: translateY(-8px) scale(1.02);
-      box-shadow: 0 0 25px rgba(255, 255, 255, 0.2), 0 0 40px rgba(255, 255, 255, 0.1);
-    }
-    .card h3 {
-      font-size: 22px;
-      margin-bottom: 12px;
-      color: #ffffff;
-    }
-    .card p {
-      font-size: 14px;
-      color: #ccc;
-      line-height: 1.5;
-      white-space: pre-line;
-    }
-    .order {
-      display: inline-block;
-      margin-top: 12px;
-      padding: 10px 18px;
-      border-radius: 8px;
-      background: linear-gradient(45deg, #ffffff, silver);
-      color: #000;
-      font-weight: bold;
-      text-decoration: none;
-      box-shadow: 0 0 10px #fff;
-      transition: 0.3s;
-    }
-    .order:hover {
-      transform: scale(1.08);
-      box-shadow: 0 0 25px #fff;
-      background: linear-gradient(45deg, #fff, #bfbfbf);
-    }
-    .footer {
-      text-align: center;
-      color: #999;
-      font-size: 14px;
-      padding: 30px 10px;
-      margin-top: 60px;
-    }
-    .footer a {
+      border-radius: 10px;
+      background: #111;
       color: #fff;
-      font-weight: bold;
-      text-decoration: none;
-      transition: color 0.3s;
+      box-shadow: inset 0 0 5px rgba(255,255,255,0.1);
+      text-align: center;
+      transition: 0.2s;
     }
-    .footer a:hover {
-      color: silver;
+    input:focus {
+      outline: none;
+      border-color: #ccc;
+      box-shadow: 0 0 8px #aaa;
+    }
+    .buttons {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+      margin-top: 15px;
+    }
+    button {
+      padding: 12px;
+      font-size: 1.2rem;
+      border: none;
+      border-radius: 10px;
+      background: linear-gradient(145deg, #1a1a1a, #2b2b2b);
+      color: #f0f0f0;
+      cursor: pointer;
+      box-shadow: 0 0 12px rgba(192,192,192, 0.2);
+      transition: all 0.3s ease;
+    }
+    button:hover {
+      background: silver;
+      color: #000;
+      box-shadow: 0 0 15px white;
+    }
+    #hasil {
+      margin-top: 20px;
+      font-size: 1.3rem;
+      color: #ffffff;
+      text-shadow: 0 0 10px #ccc, 0 0 20px silver;
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>List Produk ZalOfficial</h1>
-    <div class="produk">
-        <div class="card">
-    <h3>Website Edukasi Vip</h3>
-        <p>Harga : 25K
-
-Keuntungan :
-• Materi Tentang Pembuatan Script, Cara Buat Function Bug, Cara Buat Website Bug, Cara Connectin Website Bug Agar Online, Dan Lain Lain, Masi Banyak
-• Tutor Menggunakan Video Dan Penjelasan
-• Tutor Video Dari Awal Sampai Akhir
-</p>
-        <a href="https://wa.me/6289524134626?text=Bang+Mau+Order+Website+Edukasi+Vip" class="order">Buy Produk</a>
-        </div>
-      <div class="card">
-        <h3>Open Apk Bug The End Invictus</h3>
-        <p>Harga :
-5K : Akses 2Hari
-18K : Akses 1Minggu
-40K : 3Minggu
-50K : 1Bulan
-90K : Free Update Permanen
-
-Keuntungan :
-• Bebas Bug Sepuasnya
-• Free Request Username & Password
-• Bug Tanpa Jeda
-• Bisa Spam Bug 
-• Efek Bug Forclose & Delay Invisible
-• Bisa Bug Group
-• Cara Make Gampang
-• Login -> Masukin No Target -> Pilih Tipe Bug -> Done
-• Tampilan Apk Kece</p>
-        <a href="https://wa.me/6289524134626?text=Bang+Mau+Order+Apk%2FWeb+Bug" class="order">Buy Produk</a>
-        </div>
-     <div class="card">
-    <h3>Open Panel Pterodactyl</h3>
-    <p>Harga :
-6GB : 2K 
-7GB : 3K 
-8GB : 4K 
-9GB : 5K 
-10GB : 6K 
-Unlimited: 5K
-
-Keuntungan:
-• Panel Anti Delay 
-• Anti Rusuh
-• Anti Curi Sc
-• FastResp 
-• Garansi 30 Hari</p> <a href="https://wa.me/6289524134626?text=Bang+Mau+Order+Panel+Pterodactyl" class="order">Buy Produk</a> </div>
-<div class="card">
-    <h3>Open Reseller Panel</h3>
-    <p>Harga :
-10K : Setiap Vps Mokad Pt'
-15K : No Pt'
-
-Keuntungan:
-• Bisa Buat Panel Sepuasnya
-• Bisa Jualan Panel
-• Bisa Open Sewa Bot Bug, Md, Push Kontak
-• Garansi 30 Hari</p> <a href="https://wa.me/6289524134626?text=Bang+Mau+Join+Reseller+Panel+Pterodactyl" class="order">Buy Produk</a> </div>
-<div class="card">
-    <h3>Open VPS (Virtual Private Server)</h3>
-    <p>Harga  :
-1GB Core1 : 20K 
-2GB Core1 : 25K 
-2GB Core2 : 30K 
-4GB Core2 : 40K 
-8GB Core4 : 55K 
-16GB Core4 : 75K
-
-Keuntungan Buy VPS:
-• Free Req Nama Domain Free
-• Pasang Egg Bot WA 
-• Free Install Wings 
-• Garansi 15 Hari (1x Claim)
-</p> <a href="https://wa.me/6289524134626?text=Bang+Mau+Order+VPS" class="order">Buy Produk</a> </div>
-<div class="card">
-    <h3>Jasa Pembuatan Script Bug</h3>
-    <p>Harga : 50K
-
-Efek & Keuntungan :
-• Function Dari Gw 
-• Efek Forclose & Delay 
-• Request Nama, Foto, Style Bisa Custom Sesuka Hati</p> <a href="https://wa.me/6289524134626?text=Bang+Mau+Jasa+Buat+Script+Bug" class="order">Buy Produk</a> </div>
-<div class="card">
-    <h3>Jasa Rename Script</h3>
-    <p>Harga : 15K
-
-Keuntungan:
-• Req Foto Script 
-• Tampilan Jadi Punya Kamu
-• Nama Sesuai Keinginan Kamu
-• Auto Jadi Developer Script</p> <a href="https://wa.me/6289524134626?text=Bang+Mau+Rename+Script" class="order">Buy Produk</a> </div>
-<div class="card">
-    <h3>Open Reseller Script The End</h3>
-    <p>Harga : 45K
-
-Keuntungan:
-• Bisa Jual Script VIP 
-• Bisa Open PO Sendiri 
-• Masuk GB Reseller 
-• Diutamakan Saat Update</p> <a href="https://wa.me/6289524134626?text=Bang+Mau+Join+Reseller+The+End" class="order">Buy Produk</a> </div>
-<div class="card">
-    <h3>Open Partner Script The End</h3>
-    <P>Harga : 80K
-
-Keuntungan :
-• Admin All GB 
-• Masuk Credit Script 
-• Bisa Open Reseller The End
-• Bisa Open PO Sendiri
-• Bisa Jual Semua VIP Script</p> <a href="https://wa.me/6289524134626?text=Bang+Mau+Join+Partner+The+End" class="order">Buy Produk</a> </div>
-<div class="card">
-    <h3>Open Murid Bug WhatsApp/Telegram</h3>
-    <p>Harga
-1 Minggu : 5K 
-1 Bulan : 15K
-Permanen : 25K
-
-Keuntungan:
-• Bisa Open Jasbug 
-• Bug Sepuasnya Asal Tau Jeda
-• Cara Pake Simple & Gampang
-• Bisa Bugin Orang Terdekat</p> <a href="https://wa.me/6289524134626?text=Bang+Mau+Belajar+Bug+WA" class="order">Buy Produk</a> </div>
-<div class="card">
-    <h3>Open Jasa Bug</h3>
-    <p>Harga : 3K
-
-Keuntungan :
-• Auto C1
-• Target Mokad
-• Privasi Terjaga</p> <a href="https://wa.me/6289524134626?text=Bang+Mau+Jasa+Bug" class="order">Buy Produk</a> </div>
-<div class="card">
-    <h3>Open Murid Banned</h3>
-    <p>Harga : 10K
-
-Keuntungan :
-• Bisa Kenonin No Orang
-• Dapet Mt Banned (Metode) Work
-• Bisa Jadi Kang Banned</p> <a href="https://wa.me/6289524134626?text=Bang+Mau+Jasa+Bug" class="order">Buy Produk</a> </div>
+    <h1>Kalkulator Zal</h1>
+    <input type="number" id="num1" placeholder="Angka Pertama">
+    <input type="number" id="num2" placeholder="Angka Kedua">
+    <div class="buttons">
+      <button onclick="hitung('+')">+</button>
+      <button onclick="hitung('-')">−</button>
+      <button onclick="hitung('*')">×</button>
+      <button onclick="hitung('/')">÷</button>
     </div>
-    <div class="footer">
-      Hubungi ZalOfficial via 
-      <a href="https://wa.me/6289524134626">WhatsApp</a> atau 
-      <a href="https://t.me/ZalOffc">Telegram</a>
-      <br><br>
-      <span style="color: #ccc;">
-        Jika Ingin Bertanya-tanya Atau Mau Nego Bisa Pencet Teks Telegram Atau WhatsApp Di Atas
-      </span>
-    </div>
+    <div id="hasil"></div>
   </div>
+
+  <script>
+    function hitung(op) {
+      const a = parseFloat(document.getElementById("num1").value);
+      const b = parseFloat(document.getElementById("num2").value);
+      const hasilEl = document.getElementById("hasil");
+
+      if (isNaN(a) || isNaN(b)) {
+        hasilEl.textContent = "Masukkan angka dulu";
+        return;
+      }
+
+      let hasil;
+      switch (op) {
+        case '+': hasil = a + b; break;
+        case '-': hasil = a - b; break;
+        case '*': hasil = a * b; break;
+        case '/': hasil = b !== 0 ? (a / b).toFixed(2) : '∞'; break;
+      }
+
+      hasilEl.textContent = "Hasil: " + hasil;
+    }
+  </script>
 </body>
 </html>
